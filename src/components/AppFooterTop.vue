@@ -1,12 +1,12 @@
 <script>
 export default {
-  name: 'AppFooter',
+  name: 'AppFooterTop',
 }
 </script>
 
 <template>
   <footer class="container">
-    <p>-->Qui ci va il contenuto del footer&lt--</p> 
+    <p>-->Qui ci va il contenuto del footer Top&lt--</p> 
   </footer>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 .container{
     padding: 50px;
         /* debug */
-        height: 500px; 
+        height: 400px; 
         background-color: gold;
     }
 </style>

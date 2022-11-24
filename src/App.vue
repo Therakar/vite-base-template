@@ -2,14 +2,17 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMainTop from './components/AppMainTop.vue';
 import AppMainBottom from './components/AppMainBottom.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppFooterTop from './components/AppFooterTop.vue';
+import AppFooterBottom from './components/AppFooterBottom.vue';
+
 
 export default {
   components: {
     AppHeader,
     AppMainTop,
     AppMainBottom,
-    AppFooter
+    AppFooterTop,
+    AppFooterBottom
   }
 }
 </script>
@@ -18,7 +21,8 @@ export default {
   <AppHeader/>
   <AppMainTop/>
   <AppMainBottom/>
-  <AppFooter/>
+  <AppFooterTop/>
+  <AppFooterBottom/>
 </template>
 
 

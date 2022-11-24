@@ -1,20 +1,21 @@
 <script>
+import AppIcon from './AppIcon.vue';
 export default {
   name: 'AppHeader',
+  components: {
+    AppIcon,
+  }
 }
 </script>
 
 <template>
   <header class="container">
-    <p>-->Qui ci va il contenuto dell'header&lt--</p> 
+    <AppIcon/>
   </header>
 </template>
 
 <style scoped>
   .container{
     padding: 20px;
-    /* debug */
-    height: 120px; 
-    background-color: aquamarine;
     }
 </style>

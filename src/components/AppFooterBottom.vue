@@ -5,16 +5,19 @@ export default {
 </script>
 
 <template>
-  <footer class="container">
-    <p>-->Qui ci va il contenuto del footer Bottem&lt--</p> 
+  <footer>
+    <div class="container"></div>
   </footer>
 </template>
 
 <style scoped>
+footer{
+  background-color: pink;
+}
 .container{
     padding: 50px;
         /* debug */
         height: 120px; 
-        background-color: pink;
+        
     }
 </style>

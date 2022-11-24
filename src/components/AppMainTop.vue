@@ -5,18 +5,21 @@ export default {
 </script>
 
 <template>
-  <main class="container">
-  <p>-->Qui ci va il contenuto del main Top&lt--</p> 
+  <main>
+    <div class="container">
+      <p>-->Qui ci va il contenuto del main Top&lt--</p>
+    </div>
+   
   </main>
 </template>
 
 <style scoped>
+  main{
+    background-color: var(--darker-secondary-color);
+  }
   .container{
     padding: 50px;
-    background-color: var(--darker-secondary-color);
-    
     /* debug */
-    height: 120px; 
     color: #fff;   
-    }
+  }
 </style>

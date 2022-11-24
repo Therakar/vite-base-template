@@ -5,8 +5,16 @@ export default {
 </script>
 
 <template>
-  <h1>FOOTER</h1>
+  <footer class="container">
+    <p>-->Qui ci va il contenuto del footer&lt--</p> 
+  </footer>
 </template>
 
-<style>
+<style scoped>
+.container{
+    padding: 50px;
+        /* debug */
+        height: 500px; 
+        background-color: gold;
+    }
 </style>

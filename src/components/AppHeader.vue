@@ -5,8 +5,16 @@ export default {
 </script>
 
 <template>
-  <h1>HEADER</h1>
+  <header class="container">
+    <p>-->Qui ci va il contenuto dell'header&lt--</p> 
+  </header>
 </template>
 
-<style>
+<style scoped>
+  .container{
+    padding: 20px;
+    /* debug */
+    height: 120px; 
+    background-color: aquamarine;
+    }
 </style>

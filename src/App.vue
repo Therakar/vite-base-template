@@ -19,6 +19,6 @@ export default {
 </template>
 
 
-<style scoped>
-
+<style lang="scss">
+@import './style/global.scss';
 </style>

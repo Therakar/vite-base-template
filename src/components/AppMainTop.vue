@@ -13,8 +13,10 @@ export default {
 <style scoped>
   .container{
     padding: 50px;
-        /* debug */
-        height: 120px; 
-        background-color: darkorchid;
+    background-color: var(--darker-secondary-color);
+    
+    /* debug */
+    height: 120px; 
+    color: #fff;   
     }
 </style>

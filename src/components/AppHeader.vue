@@ -1,3 +1,4 @@
+<!-- HEADER -->
 <script>
 import AppIcon from './AppIcon.vue';
 export default {

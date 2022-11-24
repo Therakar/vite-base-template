@@ -1,3 +1,4 @@
+<!-- ICONA HEADER -->
 <script>
 export default {
   name: 'AppIcon',
@@ -5,13 +6,13 @@ export default {
 </script>
 
 <template>
-  <div class="icon">
-    <img src="../assets/dc-logo.png" alt="logo">
+  <div>
+    <img  class="icon" src="../assets/dc-logo.png" alt="logo">
   </div>
 </template>
 
 <style scoped>
   .icon{
-    height: 6.25rem;
+    width: 80px;
     }
 </style>

@@ -3,6 +3,7 @@ export default {
   name: 'AppHeaderNav',
   data() {
     return {
+        // lista di elementi che rappresentano i valori da inserire nei link che compongono il nav
         links: [
             'CHARACTERS',
             'COMICS',
@@ -23,7 +24,7 @@ export default {
 <template>
   <nav>
     <ul class="flex">
-        <li v-for="link in links"><a href="">{{link}}</a></li>
+        <li v-for="link in links"><a href="#">{{link}}</a></li> <!-- li con al suo interno un v-for che cicla sull'array di link -->
     </ul>
 </nav>
 </template>

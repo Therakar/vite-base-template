@@ -1,25 +1,25 @@
 <!-- HEADER -->
 <script>
-import AppIcon from './AppIcon.vue';
-import AppHeaderNav from './AppHeaderNav.vue';
+import AppLogo from './AppLogo.vue'; //importo il logo 
+import AppHeaderNav from './AppHeaderNav.vue'; //importo il nav 
 export default {
   name: 'AppHeader',
   components: {
-    AppIcon,
-    AppHeaderNav,
+    AppLogo, //registro il logo
+    AppHeaderNav, //registro il nav
   },
 }
 </script>
 
 <template>
   <header class="container flex sp-bw al-cnt">
-    <AppIcon/>
-    <AppHeaderNav/>
+    <AppLogo/> <!--inserisco il logo nell'html-->
+    <AppHeaderNav/> <!--inserisco il nav nell'html-->
   </header>
 </template>
 
-<style scoped>
-  .container{
-    padding: 10px;
+<style lang="scss" scoped>
+  .container{ 
+    padding: 10px 0;
     }
 </style>

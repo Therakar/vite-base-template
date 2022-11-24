@@ -1,18 +1,18 @@
 <!-- ICONA HEADER -->
 <script>
 export default {
-  name: 'AppIcon',
+  name: 'AppLogo',
 }
 </script>
 
 <template>
   <div>
-    <img  class="icon" src="../assets/dc-logo.png" alt="logo">
+    <img  class="logo" src="../assets/dc-logo.png" alt="logo">
   </div>
 </template>
 
 <style scoped>
-  .icon{
+  .logo{
     width: 80px;
     }
 </style>

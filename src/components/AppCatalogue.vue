@@ -87,55 +87,10 @@ export default {
 <template>
     <div class="container flex">
         
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-            <div class="card">
-                <img src="https://www.placecage.com/190/190" alt="">
-                <h4>TEXT</h4>
-            </div>
-        
+        <div class="card" v-for="product in products">
+            <img :src="product.src" :alt="product.series">
+            <h4>{{product.series}}</h4>
+        </div>
         
     </div>
 </template>

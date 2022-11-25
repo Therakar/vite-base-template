@@ -1,13 +1,18 @@
 <script>
+import AppHero from './AppHero.vue'; //importo l'hero
 export default {
   name: 'AppMainTop',
+  components: {
+    AppHero
+  }
 }
 </script>
 
 <template>
   <main>
+    <AppHero/>
     <div class="container">
-      <p>-->Qui ci va il contenuto del main Top&lt--</p>
+      <p>-->Qui ci vanno le card con i fumetti&lt--</p>
     </div>
    
   </main>

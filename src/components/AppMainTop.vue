@@ -1,9 +1,11 @@
 <script>
 import AppHero from './AppHero.vue'; //importo l'hero
+import AppCatalogue from './AppCatalogue.vue'; //importo l'hero
 export default {
   name: 'AppMainTop',
   components: {
-    AppHero
+    AppHero,
+    AppCatalogue
   }
 }
 </script>
@@ -11,10 +13,7 @@ export default {
 <template>
   <main>
     <AppHero/>
-    <div class="container">
-      <p>-->Qui ci vanno le card con i fumetti&lt--</p>
-    </div>
-   
+    <AppCatalogue/>
   </main>
 </template>
 
@@ -24,6 +23,7 @@ export default {
   }
   .container{
     padding: 50px;
+    max-width: 81.25rem;
     /* debug */
     color: #fff;   
   }

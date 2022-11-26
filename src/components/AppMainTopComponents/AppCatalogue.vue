@@ -1,6 +1,10 @@
 <script>
+import AppLabel from './AppCatalogueComponents/AppLabel.vue';
 export default {
-  name: 'AppCatalogue',
+    name: 'AppCatalogue',
+  components: {
+    AppLabel
+  },
   data() {
     return {
         // lista di prodotti
@@ -87,9 +91,7 @@ export default {
 <template>
     <div class="container flex">
 
-        <div class="label">
-            <h2>CURRENT SERIES</h2>
-        </div>
+        <AppLabel/>
         
         <div class="card" v-for="product in products">
             <img :src="product.thumb" :alt="product.series">
@@ -106,16 +108,6 @@ export default {
     .container{
         flex-wrap: wrap;
         position: relative;
-
-        .label{
-        width: 15.625rem;
-        height: 50px;
-        background-color: var(--primary-color);
-        position: absolute;
-        text-align: center;
-        line-height: 50px;
-        top: -25px;
-        }
         .card{
             width: calc(100% / 6);
             flex-wrap: wrap;
@@ -127,6 +119,10 @@ export default {
                 width: 11.875rem;
                 height: 11.875rem;
             }
+
+            h4{
+                font-weight: 400;
+            }
         }
 
         .btn-container{
@@ -137,10 +133,10 @@ export default {
             font-weight: 700;
             width: 11.5625rem;
 
-            &:hover{
-                filter: grayscale(0.5);
-                cursor: pointer;
-            }
+                &:hover{
+                    filter: grayscale(0.5);
+                    cursor: pointer;
+                }
             }
         }
         

@@ -1,10 +1,10 @@
 <script>
-import AppButton from './AppButton.vue';
-import AppSocials from './AppSocials.vue';
+import AppSignUpButton from './AppFooterBottomComponents/AppSignUpButton.vue';
+import AppSocials from './AppFooterBottomComponents/AppSocials.vue';
 export default {
   name: 'AppFooterBottom',
   components: {
-    AppButton,
+    AppSignUpButton,
     AppSocials
   }
 }
@@ -13,7 +13,7 @@ export default {
 <template>
   <footer>
     <div class="container flex sp-bw al-cnt">
-      <AppButton/>
+      <AppSignUpButton/>
       <AppSocials/>
     </div>
   </footer>

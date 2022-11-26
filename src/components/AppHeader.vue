@@ -1,7 +1,7 @@
 <!-- HEADER -->
 <script>
-import AppLogo from './AppLogo.vue'; //importo il logo 
-import AppHeaderNav from './AppHeaderNav.vue'; //importo il nav 
+import AppLogo from './AppHeaderComponents/AppLogo.vue'; //importo il logo 
+import AppHeaderNav from './AppHeaderComponents/AppHeaderNav.vue'; //importo il nav 
 export default {
   name: 'AppHeader',
   components: {

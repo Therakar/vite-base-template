@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div>
-    <img  class="logo" src="../assets/dc-logo.png" alt="logo">
+    <img class="logo" src="../assets/dc-logo.png" alt="logo">
   </div>
 </template>
 

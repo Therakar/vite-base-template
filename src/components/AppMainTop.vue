@@ -1,6 +1,6 @@
 <script>
-import AppHero from './AppHero.vue'; //importo l'hero
-import AppCatalogue from './AppCatalogue.vue'; //importo l'hero
+import AppHero from './AppMainTopComponents/AppHero.vue'; //importo l'hero
+import AppCatalogue from './AppMainTopComponents/AppCatalogue.vue'; //importo l'hero
 export default {
   name: 'AppMainTop',
   components: {
@@ -24,7 +24,6 @@ export default {
   .container{
     padding: 50px;
     max-width: 81.25rem;
-    /* debug */
     color: #fff;   
   }
 </style>

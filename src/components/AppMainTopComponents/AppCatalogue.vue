@@ -86,19 +86,37 @@ export default {
 
 <template>
     <div class="container flex">
+
+        <div class="label">
+            <h2>CURRENT SERIES</h2>
+        </div>
         
         <div class="card" v-for="product in products">
-            <img :src="product.src" :alt="product.series">
+            <img :src="product.thumb" :alt="product.series">
             <h4>{{product.series}}</h4>
         </div>
         
+        <div class="btn-container flex just-cnt">
+            <button  class="btn-load-more">LOAD MORE</button>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.container{
-    flex-wrap: wrap;
-    .card{
+    .container{
+        flex-wrap: wrap;
+        position: relative;
+
+        .label{
+        width: 15.625rem;
+        height: 50px;
+        background-color: var(--primary-color);
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        top: -25px;
+        }
+        .card{
             width: calc(100% / 6);
             flex-wrap: wrap;
             padding: 20px;
@@ -110,9 +128,25 @@ export default {
                 height: 11.875rem;
             }
         }
-}
-    
+
+        .btn-container{
+            width: 100%;
+            .btn-load-more{
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: 700;
+            width: 11.5625rem;
+
+            &:hover{
+                filter: grayscale(0.5);
+                cursor: pointer;
+            }
+            }
+        }
         
+    }
+    
+    
     
    
 </style>
